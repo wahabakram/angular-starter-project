@@ -53,7 +53,7 @@
       "propertiesClass": [
         {
           "name": "title",
-          "defaultValue": "'angular-boilerplate'",
+          "defaultValue": "'angular-starter-project'",
           "deprecated": false,
           "deprecationMessage": "",
           "type": "string",
@@ -77,7 +77,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [RouterOutlet],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.scss'\n})\nexport class AppComponent {\n  title = 'angular-boilerplate';\n}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [RouterOutlet],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.scss'\n})\nexport class AppComponent {\n  title = 'angular-starter-project';\n}\n",
       "styleUrl": "./app.component.scss",
       "assetsDirs": [],
       "styleUrlsData": "",

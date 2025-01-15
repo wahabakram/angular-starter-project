@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "/dist/angular-boilerplate/browser",
+    "public": "dist/angular-starter-project/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

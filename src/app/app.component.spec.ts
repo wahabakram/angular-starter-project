@@ -15,16 +15,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it("should have the 'angular-boilerplate' title", () => {
+  it("should have the 'angular-starter-project' title", () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-boilerplate');
+    expect(app.title).toEqual('angular-starter-project');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-boilerplate');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-starter-project');
   });
 });

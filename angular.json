@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-boilerplate": {
+    "angular-starter-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-boilerplate",
+            "outputPath": "dist/angular-starter-project",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-boilerplate:build:production"
+              "buildTarget": "angular-starter-project:build:production"
             },
             "development": {
-              "buildTarget": "angular-boilerplate:build:development"
+              "buildTarget": "angular-starter-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -96,11 +96,11 @@
         "e2e": {
           "builder": "playwright-ng-schematics:playwright",
           "options": {
-            "devServerTarget": "angular-boilerplate:serve"
+            "devServerTarget": "angular-starter-project:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-boilerplate:serve:production"
+              "devServerTarget": "angular-starter-project:serve:production"
             }
           }
         },
@@ -108,7 +108,7 @@
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "angular-boilerplate:build",
+            "browserTarget": "angular-starter-project:build",
             "compodoc": true,
             "compodocArgs": ["-e", "json", "-d", "."],
             "port": 6006
@@ -118,7 +118,7 @@
           "builder": "@storybook/angular:build-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "angular-boilerplate:build",
+            "browserTarget": "angular-starter-project:build",
             "compodoc": true,
             "compodocArgs": ["-e", "json", "-d", "."],
             "outputDir": "storybook-static"

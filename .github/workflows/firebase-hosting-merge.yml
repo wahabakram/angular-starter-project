@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANGULAR_BOILERPLATE_LATEST }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANGULAR_STARTER_PROJECT_F9DBB }}
           channelId: live
-          projectId: angular-boilerplate-latest
+          projectId: angular-starter-project-f9dbb
