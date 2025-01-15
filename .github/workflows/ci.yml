@@ -31,7 +31,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Check lint
         run: npm run lint
@@ -52,7 +52,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Run unit tests (Jest)
         run: npm run test:ci
@@ -67,7 +67,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build Storybook
         run: npm run build:storybook
@@ -88,7 +88,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
@@ -118,7 +118,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build the application
         run: npm run build
@@ -129,7 +129,7 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+      - run: npm install && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
