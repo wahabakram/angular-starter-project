@@ -41,7 +41,7 @@ package-lock.json
 /libpeerconnection.log
 testem.log
 /typings
-
+LICENSE
 .husky
 .prettierignore
 

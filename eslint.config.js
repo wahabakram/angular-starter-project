@@ -24,7 +24,8 @@ module.exports = tseslint.config(
       'src/stories/',
       'public',
       'src/environments',
-      '.firebaserc'
+      '.firebaserc',
+      'LICENSE'
     ]
   },
   {
