@@ -1,0 +1,20 @@
+:root {
+  --number-input-gap: theme('gap.2');
+  --number-input-control-bg: none;
+  --number-input-control-color: theme('colors.neutral.500');
+  --number-input-control-hover-color: theme('colors.neutral.600');
+  --number-input-control-active-color: theme('colors.neutral.700');
+  --number-input-control-hover-bg: theme('colors.neutral.50');
+  --number-input-control-active-bg: theme('colors.neutral.100');
+  --number-input-control-font-size: theme('fontSize.2xl');
+  --number-input-control-border-radius: theme('borderRadius.md');
+  --number-input-suffix-gap: theme('gap.3');
+  --number-input-control-size: theme('width.7');
+  --number-input-control-border: none;
+}
+
+html.dark {
+  --number-input-control-color: theme('colors.neutral.300');
+  --number-input-control-hover-color: theme('colors.neutral.200');
+  --number-input-control-hover-bg: theme('colors.neutral.500');
+}

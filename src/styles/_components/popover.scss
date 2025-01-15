@@ -1,0 +1,12 @@
+:root {
+  --popover-border: none;
+  --popover-shadow: theme('boxShadow.lg');
+  --popover-border-radius: theme('borderRadius.xl');
+  --popover-bg: theme('colors.white');
+  --popover-margin: theme('spacing[2.5]');
+}
+
+html.dark {
+  --popover-border: none;
+  --popover-bg: theme('colors.neutral.500');
+}

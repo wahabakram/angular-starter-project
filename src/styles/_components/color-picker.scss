@@ -1,0 +1,27 @@
+:root {
+  --color-picker-bg: theme('colors.white');
+  --color-picker-border-radius: theme('borderRadius.md');
+  --color-picker-margin-offset: theme('margin.2');
+  --color-picker-border: 0 solid theme('colors.neutral.200');
+  --color-picker-padding: theme('padding.0');
+  --color-picker-gap: theme('gap.0');
+  --color-picker-thumbnail-bg: transparent;
+  --color-picker-thumbnail-size: theme('width.8');
+  --color-picker-thumbnail-border-radius: theme('borderRadius.full');
+  --color-picker-thumbnail-border: 1px solid theme('colors.neutral.200');
+  --color-picker-saturation-width: 15rem;
+  --color-picker-saturation-height: 8.75rem;
+  --color-picker-saturation-pointer-size: theme('width.7');
+  --color-picker-saturation-pointer-shadow: theme('boxShadow.md');
+  --color-picker-saturation-pointer-border: 2px solid theme('colors.white');
+  --color-picker-hue-width: var(--color-picker-saturation-width);
+  --color-picker-hue-height: theme('height.7');
+  --color-picker-hue-pointer-size: theme('width.7');
+  --color-picker-hue-pointer-shadow: theme('boxShadow.md');
+  --color-picker-hue-pointer-border: 2px solid theme('colors.white');
+  --color-picker-alpha-width: var(--color-picker-saturation-width);
+  --color-picker-alpha-height: theme('height.7');
+  --color-picker-alpha-pointer-size: theme('width.7');
+  --color-picker-alpha-pointer-shadow: theme('boxShadow.md');
+  --color-picker-alpha-pointer-border: 2px solid theme('colors.white');
+}

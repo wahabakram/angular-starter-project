@@ -1,0 +1,31 @@
+:root {
+  --incidents-bar-height: theme('height.24');
+  --incidents-bar-bg: theme('colors.orange.400');
+  --incidents-bar-padding: 0 theme('padding.8');
+  --incidents-bar-color: theme('colors.neutral.800');
+  --incidents-bar-box-shadow: theme('boxShadow.lg');
+  --incidents-bar-hover-box-shadow: theme('boxShadow.xl');
+  --incidents-list-bg: rgb(0 0 0 / 32%);
+  --incidents-list-gap: theme('gap.5');
+  --incidents-list-padding: theme('padding.7') 0;
+  --incident-bg: theme('colors.white');
+  --incident-color: theme('colors.neutral.700');
+  --incident-border-radius: theme('borderRadius.md');
+  --incident-padding: theme('padding.4') theme('padding.6');
+  --incident-gap: theme('gap.6');
+  --incident-border-start: theme('width.1') solid theme('colors.neutral.900');
+  --incident-close-color: theme('colors.neutral.500');
+  --incident-close-hover-color: theme('colors.neutral.900');
+  --incident-title-font-size: theme('fontSize.sm');
+  --incident-title-font-weight: theme('fontWeight.medium');
+  --incident-details-font-size: theme('fontSize.sm');
+  --incident-details-color: theme('colors.neutral.500');
+  --incidents-title-font-size: theme('fontSize.base');
+  --incidents-title-font-weight: theme('fontWeight.medium');
+  --incidents-description-font-size: theme('fontSize.sm');
+  --incidents-description-opacity: theme('opacity.80');
+}
+
+html.dark {
+  --incidents-list-bg: rgb(255 255 255 / 32%);
+}

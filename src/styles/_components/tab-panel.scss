@@ -1,0 +1,30 @@
+:root {
+  --tab-panel-width: 5rem;
+  --tab-panel-item-width: 3.75rem;
+  --tab-panel-item-height: 3.75rem;
+  --tab-panel-item-padding: theme('padding.2');
+  --tab-panel-item-color: theme('colors.neutral.500');
+  --tab-panel-item-gap: theme('gap.1');
+  --tab-panel-item-hover-bg: theme('colors.neutral.200');
+  --tab-panel-item-hover-color: theme('colors.neutral.700');
+  --tab-panel-item-active-bg: theme('colors.primary.300');
+  --tab-panel-item-active-color: theme('colors.neutral.950');
+  --tab-panel-item-border-radius: theme('borderRadius.xl');
+  --tab-panel-aside-width: 18.75rem;
+  --tab-panel-border-end: 1px solid theme('borderColor.DEFAULT');
+  --tab-panel-nav-padding: theme('padding[2.5]');
+  --tab-panel-nav-gap: theme('gap.3');
+  --tab-panel-item-text-font-size: theme('fontSize.xs');
+  --tab-panel-item-icon-font-size: theme('fontSize.2xl');
+
+  // compact state
+  --tab-panel-compact-width: theme('width.14');
+  --tab-panel-compact-item-width: theme('width.10');
+  --tab-panel-compact-item-height: theme('height.10');
+}
+
+html.dark {
+  --tab-panel-item-hover-bg: theme('colors.neutral.700');
+  --tab-panel-item-hover-color: theme('colors.primary.200');
+  --tab-panel-item-active-bg: theme('colors.primary.300');
+}

@@ -1,0 +1,37 @@
+:root {
+  --upload-area-bg: theme('colors.white');
+  --upload-area-padding: theme('padding.10');
+  --upload-area-border: theme('width.px') dashed theme('colors.neutral.300');
+  --upload-area-border-radius: theme('borderRadius.md');
+  --upload-area-font-size: theme('fontSize.sm');
+  --upload-area-color: theme('colors.neutral.500');
+  --upload-area-drop-active-border: theme('width.px') dashed theme('colors.primary.DEFAULT');
+  --upload-area-drop-active-color: theme('colors.primary.DEFAULT');
+  --file-list-gap: theme('gap.3');
+  --file-padding: theme('padding.4') 0;
+  --file-controls-gap: theme('gap[1.5]');
+  --file-progress-margin: theme('margin.2') 0 0 0;
+  --file-progress-bg: theme('colors.neutral.100');
+  --file-progress-height: theme('height.1');
+  --file-progress-border-radius: theme('borderRadius.lg');
+  --file-progress-bar-bg: theme('colors.primary.DEFAULT');
+  --control-color: theme('colors.neutral.400');
+  --control-hover-color: theme('colors.neutral.700');
+  --control-font-size: theme('fontSize.xl');
+  --file-name-font-size: theme('fontSize.sm');
+  --file-info-font-size: theme('fontSize.xs');
+  --file-info-color: theme('colors.neutral.400');
+  --file-error-font-size: theme('fontSize.xs');
+  --file-error-color: theme('colors.red.500');
+}
+
+html.dark {
+  --upload-area-bg: theme('colors.neutral.600');
+  --upload-area-color: theme('colors.neutral.200');
+  --upload-area-border: theme('width.px') dashed theme('colors.neutral.400');
+  --upload-area-drop-active-border: theme('width.px') dashed theme('colors.primary.DEFAULT');
+  --upload-area-drop-active-color: theme('colors.primary.DEFAULT');
+  --file-error-color: theme('colors.red.300');
+  --file-progress-bg: theme('colors.neutral.500');
+  --control-hover-color: theme('colors.neutral.300');
+}

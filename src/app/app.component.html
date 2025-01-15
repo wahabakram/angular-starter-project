@@ -1,0 +1,7 @@
+@if (pageLoaded()) {
+  <app-page-loading-bar fixed />
+}
+
+<app-screen-loader [loadingText]="loadingText()"></app-screen-loader>
+
+<router-outlet />

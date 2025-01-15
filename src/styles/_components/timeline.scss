@@ -1,0 +1,37 @@
+:root {
+  --timeline-header-font-size: theme('fontSize.sm');
+  --timeline-header-padding: theme('padding.0') 0 theme('padding.4') 0;
+  --timeline-header-height: theme('height.8');
+  --timeline-header-bg: theme('colors.transparent');
+  --timeline-header-color: theme('colors.neutral.500');
+  --timeline-header-text-transform: uppercase;
+  --timeline-header-font-weight: theme('fontWeight.medium');
+  --timeline-item-gap: theme('gap[2.5]');
+  --timeline-item-no-timestamp-offset-start: -0.5rem;
+  --timeline-timestamp-font-size: theme('fontSize.xs');
+  --timeline-timestamp-width: theme('width.12');
+  --timeline-timestamp-color: theme('colors.neutral.500');
+  --timeline-timestamp-padding: 1px 0 0 0;
+  --timeline-item-content-padding: 0 0 theme('padding.6') 0;
+  --timeline-title-font-size: theme('fontSize.sm');
+  --timeline-title-color: theme('colors.neutral.800');
+  --timeline-title-font-weight: theme('fontWeight.medium');
+  --timeline-item-attributes-padding: theme('padding.1') 0 0 0;
+  --timeline-item-description-font-size: theme('fontSize.sm');
+  --timeline-item-description-color: theme('colors.gray.500');
+  --timeline-item-line-bg: theme('colors.neutral.300');
+  --timeline-item-content-gap: theme('gap.1');
+  --timeline-indicator-shape-size: theme('width.3');
+  --timeline-indicator-bg: theme('colors.white');
+  --timeline-indicator-border: 2px solid theme('colors.neutral.300');
+}
+
+html.dark {
+  --timeline-item-line-bg: theme('colors.neutral.600');
+  --timeline-header-color: theme('colors.neutral.400');
+  --timeline-timestamp-color: theme('colors.neutral.300');
+  --timeline-title-color: theme('colors.neutral.200');
+  --timeline-item-description-color: theme('colors.neutral.500');
+  --timeline-indicator-bg: theme('colors.neutral.950');
+  --timeline-indicator-border: 2px solid theme('colors.neutral.500');
+}

@@ -1,0 +1,37 @@
+:root {
+  --command-bar-height: theme('height.12');
+  --command-bar-padding: 0 theme('padding.1');
+  --command-bar-margin: theme('margin.8') 0;
+  --command-bar-zindex: theme('zIndex.50');
+  --command-bar-bg: theme('colors.neutral.950');
+  --command-bar-color: theme('colors.neutral.200');
+  --command-bar-border: 1px solid theme('colors.neutral.700');
+  --command-bar-shadow: theme('boxShadow.lg');
+  --command-bar-border-radius: theme('borderRadius.full');
+  --command-bar-command-height: theme('height.10');
+  --command-bar-command-padding: 0 theme('padding[3.5]');
+  --command-bar-command-font-size: theme('fontSize.sm');
+  --command-bar-command-color: theme('colors.neutral.200');
+  --command-bar-command-hover-color: theme('colors.neutral.100');
+  --command-bar-command-hover-bg: theme('colors.neutral.800');
+  --command-bar-value-color: theme('colors.neutral.200');
+  --command-bar-command-gap: theme('gap.3');
+  --command-bar-content-padding: 0 theme('padding.4');
+  --command-bar-font-size: theme('fontSize.sm');
+  --command-bar-divider-width: 1px;
+  --command-bar-divider-height: theme('height.6');
+  --command-bar-divider-bg: theme('colors.neutral.600');
+  --command-bar-command-shortcut-bg: theme('colors.neutral.700');
+  --command-bar-command-shortcut-border-radius: theme('borderRadius.DEFAULT');
+  --command-bar-command-shortcut-font-size: theme('fontSize.xs');
+  --command-bar-command-shortcut-color: theme('colors.neutral.300');
+  --command-bar-command-shortcut-padding: 0 5px;
+  --command-bar-command-shortcut-border: 1px solid theme('colors.neutral.600');
+  --command-bar-command-shortcut-size: theme('spacing.5');
+}
+
+html.dark {
+  --command-bar-bg: theme('colors.primary.200');
+  --command-bar-color: theme('colors.neutral.950');
+  --command-bar-command-color: theme('colors.neutral.950');
+}

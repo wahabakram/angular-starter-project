@@ -1,0 +1,67 @@
+# e2e
+# Compiled output
+/dist
+/build
+/tmp
+/out-tsc
+/bazel-out
+/public
+
+/src/assets
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+.husky
+.prettierignore
+
+# System files
+.DS_Store
+Thumbs.db
+.prettierrc
+
+.stylelintignore
+.gitignore
+.eslintignore
+.editorconfig
+.browserslistrc
+.eslintrc
+.bashrc
+.zshrc
+.nvmrc
+.node-version
+.firebaserc
+src/favicon.ico
+
+# Storybook
+src/stories/

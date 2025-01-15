@@ -1,0 +1,65 @@
+:root {
+  --alert-bg-color: transparent;
+  --alert-color: transparent;
+  --alert-icon-color: theme('colors.white');
+  --alert-border-color: transparent;
+  --alert-border-radius: theme('borderRadius.2xl');
+  --alert-padding: theme('padding.4') theme('padding.4');
+  --alert-gap: theme('gap[3.5]');
+  --alert-border-width: 1px;
+  --alert-font-size: theme('fontSize.sm');
+  --alert-thumbnail-bg: theme('colors.white');
+  --alert-thumbnail-border-radius: theme('borderRadius.lg');
+  --alert-thumbnail-size: theme('spacing.10');
+  --alert-title-font-weight: theme('fontWeight.semibold');
+  --alert-title-font-size: theme('fontSize.xs');
+  --alert-actions-gap: theme('gap.1');
+  --alert-action-height: theme('height.10');
+  --alert-action-padding: theme('padding.0') theme('padding[3.5]');
+  --alert-action-with-icon-padding: theme('padding.0') theme('padding.2');
+  --alert-action-hover-bg: theme('colors.white');
+  --alert-action-border-radius: theme('borderRadius.full');
+  --alert-action-font-weight: theme('fontWeight.medium');
+}
+
+[emr-alert-variant="default"] {
+  --alert-bg-color: theme('colors.neutral.200');
+  --alert-color: theme('colors.neutral.800');
+  --alert-thumbnail-bg: theme('colors.neutral.400');
+  --alert-border-color: theme('colors.neutral.400');
+}
+
+[emr-alert-variant="secondary"] {
+  --alert-bg-color: theme('colors.secondary.200');
+  --alert-color: theme('colors.secondary.800');
+  --alert-thumbnail-bg: theme('colors.secondary.400');
+  --alert-border-color: theme('colors.secondary.400');
+}
+
+[emr-alert-variant="informative"] {
+  --alert-bg-color: theme('colors.sky.100');
+  --alert-color: theme('colors.sky.800');
+  --alert-thumbnail-bg: theme('colors.sky.500');
+  --alert-border-color: theme('colors.sky.400');
+}
+
+[emr-alert-variant="positive"] {
+  --alert-bg-color: theme('colors.emerald.100');
+  --alert-color: theme('colors.emerald.800');
+  --alert-thumbnail-bg: theme('colors.emerald.500');
+  --alert-border-color: theme('colors.emerald.400');
+}
+
+[emr-alert-variant="negative"] {
+  --alert-bg-color: theme('colors.red.100');
+  --alert-color: theme('colors.red.800');
+  --alert-thumbnail-bg: theme('colors.red.500');
+  --alert-border-color: theme('colors.red.400');
+}
+
+[emr-alert-variant="notice"] {
+  --alert-bg-color: theme('colors.amber.100');
+  --alert-color: theme('colors.amber.800');
+  --alert-thumbnail-bg: theme('colors.amber.500');
+  --alert-border-color: theme('colors.amber.400');
+}

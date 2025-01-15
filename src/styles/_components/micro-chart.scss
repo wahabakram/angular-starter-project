@@ -1,0 +1,28 @@
+:root {
+  // bar chart
+  --mchart-bar-bar-bg: theme('colors.primary.DEFAULT');
+  --mchart-bar-bar-gradient-start-color: theme('colors.primary.500');
+  --mchart-bar-bar-gradient-end-color: theme('colors.primary.DEFAULT');
+  --mchart-bar-highlight-bg: theme('colors.neutral.200');
+
+  // line chart
+  --mchart-line-line-bg: theme('colors.primary.DEFAULT');
+  --mchart-line-area-bg: theme('colors.primary.200');
+  --mchart-line-marker-line-bg: theme('colors.neutral.DEFAULT');
+  --mchart-line-marker-dot-bg: theme('colors.primary.DEFAULT');
+  --mchart-line-area-gradient-start-color: theme('colors.primary.400/80');
+  --mchart-line-area-gradient-end-color: theme('colors.background');
+
+  // pie chart
+  --mchart-pie-stroke-color: theme('colors.background');
+  --mchart-pie-legend-item-color: theme('colors.neutral.900');
+  --mchart-pie-legend-item-hover-color: theme('colors.primary.DEFAULT');
+  --mchart-pie-value-color: theme('colors.neutral.950');
+}
+
+html.dark {
+  --mchart-bar-highlight-bg: theme('colors.neutral.700');
+  --mchart-line-area-bg: theme('colors.neutral.700');
+  --mchart-pie-legend-item-color: theme('colors.neutral.200');
+  --mchart-line-area-gradient-start-color: theme('colors.neutral.700');
+}

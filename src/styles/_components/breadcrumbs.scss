@@ -1,0 +1,19 @@
+:root {
+  --breadcrumbs-gap: theme('gap[2.5]');
+  --breadcrumbs-item-font-size: theme('fontSize.sm');
+  --breadcrumbs-item-color: theme('colors.neutral.500');
+  --breadcrumbs-item-hover-color: theme('colors.primary.DEFAULT');
+  --breadcrumbs-active-item-color: theme('colors.primary.DEFAULT');
+  --breadcrumbs-item-font-weight: theme('fontWeight.normal');
+  --breadcrumbs-separator-color: theme('colors.neutral.400');
+  --breadcrumbs-separator-font-size: theme('fontSize.xs');
+  --breadcrumbs-separator-position-top: 1px;
+  --breadcrumbs-title-color: theme('colors.neutral.800');
+  --breadcrumbs-title-font-size: theme('fontSize.xs');
+}
+
+html.dark {
+  --breadcrumbs-item-color: theme('colors.neutral.400');
+  --breadcrumbs-separator-color: theme('colors.neutral.400');
+  --breadcrumbs-title-color: theme('colors.neutral.100');
+}

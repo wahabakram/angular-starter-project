@@ -1,0 +1,17 @@
+:root {
+  --gauge-value-color: theme('colors.neutral.700');
+  --gauge-bg: theme('colors.neutral.300');
+  --gauge-fill: theme('colors.primary.DEFAULT');
+  --gauge-size: theme('width.20');
+}
+
+@keyframes emr-gauge-fill {
+  from {
+    stroke-dashoffset: 332;
+  }
+}
+
+html.dark {
+  --gauge-value-color: theme('colors.neutral.300');
+  --gauge-bg: theme('colors.neutral.600');
+}
