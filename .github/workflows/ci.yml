@@ -134,4 +134,5 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANGULAR_STARTER_PROJECT_F9DBB }}
+          channelId: live
           projectId: angular-starter-project-f9dbb
