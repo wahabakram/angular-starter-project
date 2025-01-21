@@ -11,7 +11,7 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.configPath": "./prettier.config.js",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "[ignore]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },

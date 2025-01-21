@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="flex justify-between items-center bg-surface-container-high">
+    <div class="flex items-center gap-4">
+        <button mat-icon-button (click)="layoutService.toggleSidenav(isSidenavHidden)" class="flex">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="ml-2 text-white font-bold">{{ pageTitle }}</span>
+    </div>
+    <div class="flex items-center gap-4">
+        <button mat-icon-button>
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>account_circle</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>

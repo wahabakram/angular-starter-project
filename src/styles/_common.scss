@@ -5,7 +5,7 @@ $m3-light-theme: mat.define-theme(
   (
     color: (
       theme-type: light,
-      primary: mat.$azure-palette,
+      primary: mat.$cyan-palette,
       tertiary: mat.$blue-palette,
       use-system-variables: true,
       system-variables-prefix: sys
@@ -25,7 +25,7 @@ $m3-dark-theme: mat.define-theme(
   (
     color: (
       theme-type: dark,
-      primary: mat.$azure-palette,
+      primary: mat.$cyan-palette,
       tertiary: mat.$blue-palette,
       use-system-variables: true,
       system-variables-prefix: sys
@@ -43,7 +43,7 @@ $m3-dark-theme: mat.define-theme(
 ) !default;
 
 :root {
-  --background: var(--mat-app-background-color);
+  --background: #{mat.get-theme-color($m3-light-theme, neutral, 100)};
   --on-background: var(--mat-app-text-color);
   --neutral: #{mat.get-theme-color($m3-light-theme, neutral, 60)};
   --neutral-0: #{mat.get-theme-color($m3-light-theme, neutral, 100)};
@@ -148,6 +148,10 @@ $m3-dark-theme: mat.define-theme(
   --mdc-protected-button-container-height: 2.375rem;
   --mat-menu-item-label-text-size: theme('fontSize.tiny');
   --mat-option-label-text-size: theme('fontSize.tiny');
+
+  // Toolbar color
+  --mat-toolbar-background-color: var(--primary-650);
+  --mat-toolbar-color: var(--primary-0);
 
   @include mat.all-component-themes($m3-light-theme);
   @include mat.typography-hierarchy($m3-light-theme);
