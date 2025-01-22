@@ -1,8 +1,10 @@
 @use '@angular/material' as mat;
 
 :root {
-  @include mat.toolbar-overrides((
-    container-background-color: var(--mat-toolbar-background-color),
-    container-text-color: var(--mat-toolbar-color),
-  ));
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: var(--mat-toolbar-background-color),
+      container-text-color: var(--mat-toolbar-color)
+    )
+  );
 }
