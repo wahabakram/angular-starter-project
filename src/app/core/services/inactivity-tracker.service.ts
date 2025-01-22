@@ -20,6 +20,13 @@ export class InactivityTrackerService {
   ).pipe(debounceTime(250));
   private readonly _noInteraction = new EventEmitter<void>();
 
+  private _setupTimer(): void {
+    clearTimeout(this._timeout);
+    this._timeout = setTimeout(() => {
+      this._noInteraction.emit();
+    }, this._interval);
+  }
+
   setupInactivityTimer(interval?: number): Observable<void> {
     if (interval) {
       this._interval = interval;
@@ -35,12 +42,5 @@ export class InactivityTrackerService {
 
   reset(): void {
     this._setupTimer();
-  }
-
-  private _setupTimer(): void {
-    clearTimeout(this._timeout);
-    this._timeout = setTimeout(() => {
-      this._noInteraction.emit();
-    }, this._interval);
   }
 }

@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '@core/layout/footer/footer.component';
 import { HeaderComponent } from '@core/layout/header/header.component';
-import { SidenavComponent } from "../../core/layout/sidenav/sidenav.component";
+
+import { SidenavComponent } from '../../core/layout/sidenav/sidenav.component';
 
 @Component({
   selector: 'app-home',
@@ -12,5 +13,5 @@ import { SidenavComponent } from "../../core/layout/sidenav/sidenav.component";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  hasBackdrop: boolean = true;
+  hasBackdrop = true;
 }

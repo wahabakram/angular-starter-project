@@ -10,10 +10,11 @@ import { getState } from '@ngrx/signals';
   styleUrl: './screen-loader.component.scss'
 })
 export class ScreenLoaderComponent {
+  private readonly _globalStore = inject(GlobalStore);
+
   @Input() loadingText?: string;
 
   readonly _loaderElement = viewChild.required<ElementRef>('loader');
-  private readonly _globalStore = inject(GlobalStore);
 
   constructor() {
     const initialState = getState<GlobalState>(this._globalStore);

@@ -12,16 +12,14 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
   styleUrl: './sidenav.component.scss'
 })
 export class SidenavComponent implements OnInit {
+  private readonly _destroyRef = inject(DestroyRef);
+  private readonly _layoutService = inject(LayoutService);
+
   @ViewChild('snav') sideNav!: MatSidenav;
 
-  private _destroyRef = inject(DestroyRef);
-  private _layoutService = inject(LayoutService);
-
   ngOnInit(): void {
-    this._layoutService.sidenav
-      .pipe(takeUntilDestroyed(this._destroyRef))
-      .subscribe(() => {
-        this.sideNav.toggle();
-      });
+    this._layoutService.sidenav.pipe(takeUntilDestroyed(this._destroyRef)).subscribe(() => {
+      this.sideNav.toggle();
+    });
   }
 }

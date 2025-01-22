@@ -1,4 +1,4 @@
-import { Component, EventEmitter, inject, Output } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatIcon } from '@angular/material/icon';
 import { EnvironmentService } from '@core/services/environment.service';
@@ -12,7 +12,8 @@ import { LayoutService } from '@core/services/layout.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  private _environmentService = inject(EnvironmentService);
+  private readonly _environmentService = inject(EnvironmentService);
+
   public layoutService = inject(LayoutService);
 
   pageTitle = this._environmentService.getValue('pageTitle');

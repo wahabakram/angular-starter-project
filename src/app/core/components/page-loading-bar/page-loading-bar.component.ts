@@ -26,29 +26,17 @@ import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Rout
   }
 })
 export class PageLoadingBarComponent implements OnInit {
-  @HostBinding('class.is-fixed') fixed = input(false, {
-    transform: booleanAttribute
-  });
-  @HostBinding('class.is-visible') protected visible = false;
-  protected value = 0;
-
   private readonly _router = inject(Router);
   private readonly _destroyRef = inject(DestroyRef);
   private readonly _cdr = inject(ChangeDetectorRef);
-
   private _subscription?: Subscription;
+  protected value = 0;
 
-  ngOnInit(): void {
-    this._router.events.pipe(takeUntilDestroyed(this._destroyRef)).subscribe((event) => {
-      if (event instanceof NavigationStart) {
-        this._start();
-      }
+  @HostBinding('class.is-visible') protected visible = false;
 
-      if (event instanceof NavigationError || event instanceof NavigationEnd || event instanceof NavigationCancel) {
-        this._finish();
-      }
-    });
-  }
+  @HostBinding('class.is-fixed') fixed = input(false, {
+    transform: booleanAttribute
+  });
 
   private _start(): void {
     this._subscription?.unsubscribe();
@@ -91,5 +79,17 @@ export class PageLoadingBarComponent implements OnInit {
 
   private _getRandom(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  ngOnInit(): void {
+    this._router.events.pipe(takeUntilDestroyed(this._destroyRef)).subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        this._start();
+      }
+
+      if (event instanceof NavigationError || event instanceof NavigationEnd || event instanceof NavigationCancel) {
+        this._finish();
+      }
+    });
   }
 }

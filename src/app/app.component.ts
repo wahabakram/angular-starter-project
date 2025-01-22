@@ -16,13 +16,13 @@ import { ScreenLoaderService } from '@core/services/screen-loader.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  pageLoaded = signal(false);
-  loadingText = signal('Application Loading');
-
   private readonly _platformId = inject(PLATFORM_ID);
   private readonly _inactivityTracker = inject(InactivityTrackerService);
   private readonly _router = inject(Router);
   private readonly _screenLoader = inject(ScreenLoaderService);
+
+  pageLoaded = signal(false);
+  loadingText = signal('Application Loading');
 
   constructor() {
     afterNextRender(() => {

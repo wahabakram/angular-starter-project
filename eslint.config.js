@@ -179,19 +179,28 @@ module.exports = tseslint.config(
         'error',
         {
           default: [
-            'public-static-field',
-            'protected-static-field',
+            // Static members (grouped by visibility)
             'private-static-field',
-            'public-instance-field',
-            'protected-instance-field',
+            'protected-static-field',
+            'public-static-field',
+
+            // Instance fields (grouped by visibility)
             'private-instance-field',
-            'public-static-method',
-            'protected-static-method',
-            'private-static-method',
+            'protected-instance-field',
+            'public-instance-field',
+
+            // Constructor (typically comes after fields)
             'constructor',
-            'public-instance-method',
+
+            // Static methods (grouped by visibility)
+            'private-static-method',
+            'protected-static-method',
+            'public-static-method',
+
+            // Instance methods (grouped by visibility)
+            'private-instance-method',
             'protected-instance-method',
-            'private-instance-method'
+            'public-instance-method'
           ]
         }
       ],
